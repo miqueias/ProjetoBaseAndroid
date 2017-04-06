@@ -2,6 +2,7 @@ package br.com.academiajedi.projetobase;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,12 +20,18 @@ public class Tela1Activity extends AppCompatActivity {
         //setamos o layout que vai ser carregado por essa activity
         setContentView(R.layout.activity_tela1);
 
+        //importando a fonte
+        final Typeface oxygenRegular = Typeface.createFromAsset(getResources().getAssets(), "PressStart2P-Regular.ttf");
+
         //associamos os componentes da nossa tela a nossa activity
         //estamos criando variaveis dos tipos correespondentes no layout
         //referenciando essas variaveis atreves do id de cada elemento
         final TextView txtEmail = (TextView) findViewById(R.id.id_text_email);
         final TextView txtSenha = (TextView) findViewById(R.id.id_text_senha);
+
         Button btnEntrar = (Button) findViewById(R.id.id_button_entrar);
+        //atribuindo a fonte ao botão
+        btnEntrar.setTypeface(oxygenRegular);
 
         //definimos o evento de click do botão
         //caso tenhamos mais botões, cada botão tem o seu proprio evento
