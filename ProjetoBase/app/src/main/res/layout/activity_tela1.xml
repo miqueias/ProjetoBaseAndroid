@@ -66,4 +66,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="42dp"
         />
+
+    <Button
+        android:id="@+id/btnLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/id_button_entrar"
+        android:layout_alignStart="@+id/id_text_senha"
+        android:text="Lista" />
 </RelativeLayout>

@@ -48,6 +48,16 @@ public class Tela1Activity extends AppCompatActivity {
             }
         });
 
+        Button btnLista = (Button) findViewById(R.id.btnLista);
+
+        btnLista.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(c, ListaActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }
