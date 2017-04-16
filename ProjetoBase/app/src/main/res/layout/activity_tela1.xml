@@ -7,55 +7,63 @@
     tools:context="br.com.academiajedi.projetobase.Tela1Activity"
     android:background="#DAA520">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="76dp"
-            android:layout_marginTop="129dp"
             android:text="Email"
-            android:id="@+id/textView3" />
+            android:id="@+id/textView3"
+            android:layout_marginBottom="44dp"
+            android:layout_alignBottom="@+id/id_text_email"
+            android:layout_alignStart="@+id/id_text_email" />
 
     <EditText
         android:id="@+id/id_text_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView3"
-        android:layout_below="@+id/textView3"
-        android:layout_marginTop="25dp"
         android:ems="10"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/textView4"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Senha"
+        android:layout_above="@+id/id_text_senha"
         android:layout_alignStart="@+id/id_text_email"
-        android:layout_centerVertical="true"
-        android:text="Senha" />
+        android:layout_marginBottom="33dp" />
 
     <EditText
         android:id="@+id/id_text_senha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView4"
-        android:layout_below="@+id/textView4"
-        android:layout_marginTop="41dp"
         android:ems="10"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:layout_above="@+id/id_button_entrar"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginBottom="30dp" />
 
     <Button
         android:id="@+id/id_button_entrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/id_text_senha"
-        android:layout_below="@+id/id_text_senha"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="45dp"
         android:text="Entrar"
         android:background="#000"
-        android:textColor="#DAA520"/>
+        android:textColor="#DAA520"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/id_text_senha"
+        android:layout_marginBottom="21dp" />
 
     <ImageView
         android:id="@+id/imageView"

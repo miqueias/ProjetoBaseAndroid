@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Projeto Base</string>
+    <string name="action_settings">Configurações</string>
+    <string name="action_favorite">Favoritos</string>
 </resources>
