@@ -88,13 +88,13 @@ public class Tela1Activity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.action_settings:
                 final AlertDialog.Builder builder = new AlertDialog.Builder(Tela1Activity.this);
-                builder.setMessage("Configuraç˜es")
-                        .setPositiveButton(R.string.app_name, new DialogInterface.OnClickListener() {
+                builder.setMessage("Configurações")
+                        .setPositiveButton("SIM", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 dialog.cancel();
                             }
                         })
-                        .setNegativeButton(R.string.app_name, new DialogInterface.OnClickListener() {
+                        .setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 dialog.cancel();
                             }
