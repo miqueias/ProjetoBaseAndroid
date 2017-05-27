@@ -14,7 +14,8 @@
         android:background="@color/cardview_dark_background"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:textAlignment="center"/>
 
         <TextView
             android:layout_width="wrap_content"
